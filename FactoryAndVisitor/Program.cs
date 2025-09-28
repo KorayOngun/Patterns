@@ -3,7 +3,7 @@ using FactoryAndVisitor.Domain.Orders;
 using FactoryAndVisitor.Reporting.Abstractions;
 using FactoryAndVisitor.Reporting.Factory;
 using FactoryAndVisitor.Visitors;
-using FactoryAndVisitor.Domain.Reports;
+using FactoryAndVisitor.ValueObject.Reports;
 
 internal class Program
 {
@@ -30,13 +30,13 @@ internal class Program
                 };
 
 
-        var visitor = new StringReportVisitor();
-
+        var stringReportVisitor = new StringReportVisitor();
+        var csvVisitor = new CsvExportVisitor();
         {
             var service = new ReportFactory().Resolve(ReportType.Detail);
             var dtos = service.GetReports(orders);
             foreach (var dto in dtos)
-                Console.WriteLine(dto.Accept(visitor));
+                Console.WriteLine(dto.Accept(stringReportVisitor));
 
         }
 
@@ -55,7 +55,7 @@ internal class Program
             var service = new ReportFactory().Resolve(ReportType.Summary);
             var dtos = service.GetReports(orders);
             foreach (var dto in dtos)
-                Console.WriteLine(dto.Accept(visitor));
+                Console.WriteLine(dto.Accept(csvVisitor));
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace FactoryAndVisitor.Domain.Reports;
+namespace FactoryAndVisitor.ValueObject.Reports;
 
 public class DetailReport : IReport
 {
@@ -7,5 +7,8 @@ public class DetailReport : IReport
     public DateOnly OrderDate { get; set; }
     public int Count { get; set; }
 
-    public string Accept(IStringReportBuildVisitor reportVisitor) => reportVisitor.Visit(this);
+    public T Accept<T>(IVisitor<T> reportVisitor)
+    {
+        return reportVisitor.Visit(this);
+    }
 }

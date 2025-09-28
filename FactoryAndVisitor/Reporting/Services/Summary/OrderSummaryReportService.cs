@@ -1,5 +1,5 @@
 using FactoryAndVisitor.Domain.Orders;
-using FactoryAndVisitor.Domain.Reports;
+using FactoryAndVisitor.ValueObject.Reports;
 using FactoryAndVisitor.Reporting.Abstractions;
 
 namespace FactoryAndVisitor.Reporting.Services.Summary;
