@@ -23,11 +23,7 @@ public class OrderDetailReportService : IOrderReportService
         return CreateData(orders);
     }
 
-    public T Export<T>(IExportStrategy<T> strategy, IEnumerable<Order> orders)
-    {
-            
-        
-    }    
+ 
 
 
 

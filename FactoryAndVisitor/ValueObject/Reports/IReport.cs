@@ -16,3 +16,4 @@ public interface IVisitor<T>
 public interface IStringVisitor : IVisitor<string> { }
 
 public interface ICsvRowVisitor : IVisitor<string> { }
+
