@@ -29,10 +29,10 @@ public interface IEnemyBuilder
 }
 
 
-public  class Enemy
+public class Enemy
 {
     public string Type { get; set; }
-    public int HP {  get; set; }
+    public int HP { get; set; }
     public int AttackPoint { get; set; }
 }
 
@@ -60,7 +60,7 @@ public class EnemyBuilder : IEnemyBuilder
     {
         _enemy.Type = type;
     }
-    
+
     public Enemy GetEnemy()
     {
         var enemy = _enemy;

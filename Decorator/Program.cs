@@ -32,8 +32,8 @@ public class User
 
 public interface IRepo // IComponent
 {
-     void Save(User user);
-     User? Get (int id);
+    void Save(User user);
+    User? Get(int id);
 }
 
 public class Repo : IRepo // BaseComponent
