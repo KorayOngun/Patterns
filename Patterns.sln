@@ -7,17 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Deco
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "CretionalPatterns\Builder\Builder.csproj", "{3E6662F6-934C-42EE-A9F6-AA5D27C8F9B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "CreationalPatterns\Builder\Builder.csproj", "{3E6662F6-934C-42EE-A9F6-AA5D27C8F9B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CretionalPatterns", "CretionalPatterns", "{4B7F5C0B-F6AC-4B09-A33C-0D28BE759A8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{4B7F5C0B-F6AC-4B09-A33C-0D28BE759A8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfBuilder", "CretionalPatterns\PdfBuilder\PdfBuilder.csproj", "{5B339736-B7F3-4DF9-9536-66B77C128871}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfBuilder", "CreationalPatterns\PdfBuilder\PdfBuilder.csproj", "{5B339736-B7F3-4DF9-9536-66B77C128871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "CretionalPatterns\Prototype\Prototype.csproj", "{B0C04B8F-2737-4D13-8818-AE43F106F3D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "CreationalPatterns\Prototype\Prototype.csproj", "{B0C04B8F-2737-4D13-8818-AE43F106F3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeRegister", "CretionalPatterns\PrototypeRegister\PrototypeRegister.csproj", "{BA811E17-FA3B-446D-B8C5-B9B05666DC56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeRegister", "CreationalPatterns\PrototypeRegister\PrototypeRegister.csproj", "{BA811E17-FA3B-446D-B8C5-B9B05666DC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "CretionalPatterns\Factory\Factory.csproj", "{D412C060-935A-47E0-9495-4C10EBE1A0D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "CreationalPatterns\Factory\Factory.csproj", "{D412C060-935A-47E0-9495-4C10EBE1A0D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
