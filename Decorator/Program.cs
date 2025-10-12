@@ -53,7 +53,7 @@ public class Repo : IRepo // BaseComponent
 
 
 
-public class RepoDecorator : IRepo //Component Decorator
+public abstract class RepoDecorator : IRepo //Component Decorator
 {
     protected IRepo _repo;
     public RepoDecorator(IRepo repo)
@@ -75,7 +75,7 @@ public class RepoDecorator : IRepo //Component Decorator
 
 
 
-public class LoggingRepoDecorator : RepoDecorator // Decorator 1
+public  class LoggingRepoDecorator : RepoDecorator // Decorator 1
 {
     public LoggingRepoDecorator(IRepo repo) : base(repo) { }
 
