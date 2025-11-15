@@ -74,4 +74,3 @@ public class RailwayLogistics : ILogistic
         return new Train();
     }
 }
-
