@@ -2,9 +2,9 @@
 {
     private static void Main(string[] args)
     {
-        ILogistic logistic1 = new SeaLogistic();
-        ILogistic logistic2 = new RoadLogistic();
-        ILogistic logistic3 = new RailwayLogistic();
+        ILogistic logistic1 = new SeaLogistics();
+        ILogistic logistic2 = new RoadLogistics();
+        ILogistic logistic3 = new RailwayLogistics();
 
         ITransport transport1 = logistic1.CreateTransport();
         ITransport transport2 = logistic2.CreateTransport();
@@ -52,7 +52,7 @@ public interface ILogistic
 }
 
 
-public class SeaLogistic : ILogistic
+public class SeaLogistics : ILogistic
 {
     public ITransport CreateTransport()
     {
@@ -60,7 +60,7 @@ public class SeaLogistic : ILogistic
     }
 }
 
-public class RoadLogistic : ILogistic
+public class RoadLogistics : ILogistic
 {
     public ITransport CreateTransport()
     {
@@ -68,7 +68,7 @@ public class RoadLogistic : ILogistic
     }
 }
 
-public class RailwayLogistic : ILogistic
+public class RailwayLogistics : ILogistic
 {
     public ITransport CreateTransport()
     {
