@@ -41,7 +41,6 @@ public class Train : ITransport
     public void Deliver()
     {
         Console.WriteLine("deliver by train");
-
     }
 }
 
